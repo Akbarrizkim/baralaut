@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white !important;
+    background-color: maroon !important;
+}
+
+.upper-wrapper {
+    margin-top: 10px;
+    margin-right: 130px;
+    margin-left: 130px;
+    margin-bottom: 1vmax;
+}
+.upper-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.upper-input {
+    margin-top: 100px;
+    padding: 30px;
+    background-color: white;
+    color: maroon;
+    border: 3px solid white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content-wrapper {
+    margin-top: 10px;
+    margin-right: 130px;
+    margin-left: 130px; 
+    margin-bottom: 1vmax;
+}
+
+button{
+    background-color: white;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: maroon;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: white;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: maroon;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button a {
+    color: maroon;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.students-wrapper {
+    padding-top: 10px;
+}
+
+.students-wrapper h2{
+    text-align: center;
+}
+.students-wrapper table {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.students-wrapper table, th, td {
+    padding: 10px;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+.update-wrapper {
+    padding-top: 30px;
+}
+
+.back-wrapper {
+    padding-top: 10px;
+}
+
+.upper-wrapper h2 {
+    text-align: center;
+}
+.form-wrapper {
+    display: block;
+    padding-top: 10px;
+}
+
+.form-wrapper form{
+    text-align: center;
+}
+
+.form-wrapper form label {
+    text-align: left;
+    font-weight: 700;
+}
+
+.form-wrapper form input {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TST Web Service</title>
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="upper-wrapper">
+                <div class="upper-description">
+                    <div class="webtitle">
+                        <h1>Mahasiswa Data Center</h1>
+                    </div>
+                    <div class="desc">
+                        Sebuah website untuk mencari data informasi mahasiswa-mahasiswa ITB!
+                    </div>
+                </div>
+                <div class="upper-profile">
+                    <h2>Selamat datang, <%= user.displayName %>!</h2>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                    <a href="/students">
+                        <button>
+                            Cek Data Mahasiswa
+                        </button>
+                    </a>
+
+                    <a href="/logout">
+                        <button>
+                            Log Out
+                        </button>
+                    </a>
+            </div>
+        </div>
+    </body>
+</html>

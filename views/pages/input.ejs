@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TST Web Service</title>
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="upper-wrapper">
+                <div class="upper-description">
+                    <div class="webtitle">
+                        <h1>Mahasiswa Data Center</h1>
+                    </div>
+                    <div class="desc">
+                        Sebuah website untuk mencari data informasi mahasiswa-mahasiswa ITB!
+                    </div>
+                </div>
+                
+                <div class="back-wrapper">
+                    <a href="/students"><button>Back</button></a>
+                </div>
+                
+                <h2>Masukkan Data Mahasiswa Baru</h2>
+            
+                <div class="form-wrapper">
+                    <form method="POST" action="/students/input">
+                        <label for="nim">NIM:</label><br>
+                        <input type="text" id="nim" name="nim" placeholder="contoh: 18218001"><br><br>
+                        
+                        <label for="nama">Nama:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="contoh: Budi Putra"><br><br>
+    
+                        <label for="umur">Umur:</label><br>
+                        <input type="text" id="umur" name="umur" placeholder="contoh: 20"><br><br>
+    
+                        <label for="fakultas">Fakultas:</label><br>
+                        <input type="text" id="fakultas" name="fakultas" placeholder="contoh: FTMD"><br><br>
+    
+                        <label for="jurusan">Jurusan:</label><br>
+                        <input type="text" id="jurusan" name="jurusan" placeholder="contoh: Teknik Mesin"><br><br>
+    
+                        <label for="alamat">Alamat:</label><br>
+                        <input type="text" id="alamat" name="alamat" placeholder="contoh: Jalan Ganeca no. 10"><br><br>
+
+                        <button type="submit">Masukkan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

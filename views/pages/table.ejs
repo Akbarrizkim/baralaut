@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TST Web Service</title>
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="upper-wrapper">
+                <div class="upper-description">
+                    <div class="webtitle">
+                        <h1>Mahasiswa Data Center</h1>
+                    </div>
+                    <div class="desc">
+                        Sebuah website untuk mencari data informasi mahasiswa-mahasiswa ITB!
+                    </div>
+                </div>
+
+                <div class="students-wrapper">
+                    <a href="/success"><button>Back</button></a>
+                    <h2>Tabel Data Mahasiswa</h2>
+                    <table>
+                        <tr>
+                            <th>No.</th>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Umur</th>
+                            <th>Fakultas</th>
+                            <th>Jurusan</th>
+                            <th>Alamat</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <%
+                        if(student.length!=0){
+                        var i=1;
+                        // student.forEach(function(data)
+                        Array.prototype.forEach.call(student, data => {
+                        %>
+                        <tr>
+                            <td><%=i; %></td>
+                            <td><%=data.nim %></td>
+                            <td><%=data.nama %></td>
+                            <td><%=data.umur %></td>
+                            <td><%=data.fakultas %></td>
+                            <td><%=data.jurusan %></td>
+                            <td><%=data.alamat %></td>
+                            <td><a href="/students/edit/<%=data.id %>"><button>Edit</button></a></td>
+                            <td>
+                                <form method="POST" action="/students/<%=data.id%>?_method=DELETE">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <%  i++; }) %>
+                        <% } else{ %>
+                            <tr>
+                                <td colspan="7">No Data Found</td>
+                            </tr>
+                        <% } %>
+                    </table>
+
+                    <div class="update-wrapper">
+                        <h3>Ingin menambahkan data mahasiswa yang baru?</h3>
+
+                        <a href="/students/input"><button>Tambahkan Data Baru!</button></a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
